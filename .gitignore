@@ -2,9 +2,9 @@
 *
 
 # Some personal configs
-.config/gitignore
+./config/gitignore
 
 
 # Except
 !.gitignore
-!.config
+!./config
