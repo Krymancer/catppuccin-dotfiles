@@ -1,0 +1,1 @@
+Vapour.settings.colorscheme = 'catppuccin'

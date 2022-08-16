@@ -1,0 +1,4 @@
+[2022-08-15 22:25:06.073] [main] [info] update#ctor - updates are disabled as there is no update URL
+[2022-08-15 22:25:09.621] [main] [info] Starting extension host with pid 42523 (fork() took 14 ms).
+[2022-08-15 22:27:28.391] [main] [info] Waiting for extension host with pid 42523 to exit.
+[2022-08-15 22:27:28.398] [main] [info] Extension host with pid 42523 exited with code: 0, signal: null.

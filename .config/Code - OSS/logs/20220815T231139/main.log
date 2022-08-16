@@ -1,0 +1,4 @@
+[2022-08-15 23:11:41.921] [main] [info] update#ctor - updates are disabled as there is no update URL
+[2022-08-15 23:11:49.332] [main] [info] Starting extension host with pid 10868 (fork() took 11 ms).
+[2022-08-15 23:11:50.494] [main] [info] Waiting for extension host with pid 10868 to exit.
+[2022-08-15 23:11:52.722] [main] [info] Extension host with pid 10868 exited with code: 0, signal: null.

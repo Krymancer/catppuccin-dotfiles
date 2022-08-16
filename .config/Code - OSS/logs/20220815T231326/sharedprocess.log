@@ -1,0 +1,12 @@
+[2022-08-15 23:13:33.086] [sharedprocess] [info] Starting worker process with pid 11516 (type: fileWatcher, window: 1).
+[2022-08-15 23:13:36.819] [sharedprocess] [warning] No ptyHost heartbeat after 6 seconds
+[2022-08-15 23:14:04.727] [sharedprocess] [info] Worker process with pid 11516 terminated normally (type: fileWatcher, window: 1).
+[2022-08-15 23:14:06.929] [sharedprocess] [info] Starting worker process with pid 12085 (type: fileWatcher, window: 1).
+[2022-08-15 23:14:42.887] [sharedprocess] [info] Getting Manifest... pkief.material-icon-theme
+[2022-08-15 23:14:43.092] [sharedprocess] [info] Installing extension: pkief.material-icon-theme
+[2022-08-15 23:14:45.158] [sharedprocess] [info] Downloaded extension: pkief.material-icon-theme /home/junho/.config/Code - OSS/CachedExtensionVSIXs/pkief.material-icon-theme-4.19.0
+[2022-08-15 23:14:46.883] [sharedprocess] [info] Extracted extension to /home/junho/.vscode-oss/extensions/.d39f465b-1da1-4d36-b3ba-f54f2a211984: pkief.material-icon-theme
+[2022-08-15 23:14:47.162] [sharedprocess] [info] Renamed to /home/junho/.vscode-oss/extensions/pkief.material-icon-theme-4.19.0
+[2022-08-15 23:14:47.167] [sharedprocess] [info] Extracting completed. pkief.material-icon-theme
+[2022-08-15 23:14:47.169] [sharedprocess] [info] Extension installed successfully: pkief.material-icon-theme
+[2022-08-16 11:14:43.603] [sharedprocess] [warning] No ptyHost heartbeat after 6 seconds

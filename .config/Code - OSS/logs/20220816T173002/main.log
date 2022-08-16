@@ -1,0 +1,4 @@
+[2022-08-16 17:30:06.707] [main] [info] update#ctor - updates are disabled as there is no update URL
+[2022-08-16 17:30:13.187] [main] [info] Starting extension host with pid 3367 (fork() took 11 ms).
+[2022-08-16 17:36:38.855] [main] [info] Extension host with pid 3367 exited with code: 0, signal: null.
+[2022-08-16 17:36:40.823] [main] [info] Starting extension host with pid 4421 (fork() took 13 ms).

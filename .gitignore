@@ -8,3 +8,4 @@
 # Except
 !.gitignore
 !./config
+!./config/*

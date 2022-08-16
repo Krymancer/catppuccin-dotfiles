@@ -1,0 +1,27 @@
+[2022-08-16T02:14:09.002Z] Log level: Info
+[2022-08-16T02:14:09.003Z] [info] Validating found git in: git
+[2022-08-16T02:14:09.017Z] [info] Using git 2.37.2 from git
+[2022-08-16T02:14:09.033Z] > git rev-parse --show-toplevel [4ms]
+[2022-08-16T02:14:09.046Z] > git rev-parse --git-dir --git-common-dir [5ms]
+[2022-08-16T02:14:09.059Z] [info] Open repository: /home/junho/git/pokedex-solid-graphql
+[2022-08-16T02:14:09.071Z] > git status -z -uall [3ms]
+[2022-08-16T02:14:09.077Z] > git symbolic-ref --short HEAD [1ms]
+[2022-08-16T02:14:09.084Z] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+[2022-08-16T02:14:09.103Z] > git remote --verbose [4ms]
+[2022-08-16T02:14:09.104Z] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [13ms]
+[2022-08-16T02:14:09.116Z] > git config --get commit.template [1ms]
+[2022-08-16T02:14:09.127Z] > git status -z -uall [4ms]
+[2022-08-16T02:14:09.132Z] > git symbolic-ref --short HEAD [1ms]
+[2022-08-16T02:14:09.139Z] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+[2022-08-16T02:14:09.152Z] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [6ms]
+[2022-08-16T02:14:09.156Z] > git remote --verbose [6ms]
+[2022-08-16T02:14:09.167Z] > git config --get commit.template [2ms]
+[2022-08-16T02:14:09.609Z] > git check-ignore -v -z --stdin [1ms]
+[2022-08-16T02:14:10.663Z] > git check-ignore -v -z --stdin [1ms]
+[2022-08-16T02:14:14.966Z] > git check-ignore -v -z --stdin [1ms]
+[2022-08-16T02:14:16.753Z] > git show --textconv :src/pages/Main/index.tsx [73ms]
+[2022-08-16T02:14:16.772Z] > git ls-files --stage -- /home/junho/git/pokedex-solid-graphql/src/pages/Main/index.tsx [22ms]
+[2022-08-16T02:14:16.779Z] > git cat-file -s 27f9c733b5b854a37a839390be7984d31b6462cc [2ms]
+[2022-08-16T02:14:53.900Z] > git show --textconv :src/pages/Main/index.tsx [6ms]
+[2022-08-16T02:14:53.902Z] > git ls-files --stage -- /home/junho/git/pokedex-solid-graphql/src/pages/Main/index.tsx [3ms]
+[2022-08-16T02:14:53.908Z] > git cat-file -s 27f9c733b5b854a37a839390be7984d31b6462cc [1ms]

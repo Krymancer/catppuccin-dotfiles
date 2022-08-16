@@ -1,0 +1,22 @@
+[2022-08-16T02:13:35.714Z] Log level: Info
+[2022-08-16T02:13:35.716Z] [info] Validating found git in: git
+[2022-08-16T02:13:35.931Z] [info] Using git 2.37.2 from git
+[2022-08-16T02:13:49.406Z] > git rev-parse --show-toplevel [3ms]
+[2022-08-16T02:13:49.416Z] > git rev-parse --git-dir --git-common-dir [1ms]
+[2022-08-16T02:13:49.426Z] [info] Open repository: /home/junho/git/pokedex-solid-graphql
+[2022-08-16T02:13:49.487Z] > git status -z -uall [52ms]
+[2022-08-16T02:13:49.621Z] > git symbolic-ref --short HEAD [129ms]
+[2022-08-16T02:13:49.745Z] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [108ms]
+[2022-08-16T02:13:49.774Z] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [24ms]
+[2022-08-16T02:13:49.882Z] > git remote --verbose [110ms]
+[2022-08-16T02:13:49.894Z] > git config --get commit.template [1ms]
+[2022-08-16T02:13:49.907Z] > git status -z -uall [7ms]
+[2022-08-16T02:13:49.913Z] > git symbolic-ref --short HEAD [1ms]
+[2022-08-16T02:13:49.922Z] > git for-each-ref --format=%(refname)%00%(upstream:short)%00%(objectname)%00%(upstream:track)%00%(upstream:remotename)%00%(upstream:remoteref) refs/heads/main refs/remotes/main [2ms]
+[2022-08-16T02:13:49.963Z] > git remote --verbose [30ms]
+[2022-08-16T02:13:49.963Z] > git for-each-ref --sort -committerdate --format %(refname) %(objectname) %(*objectname) [36ms]
+[2022-08-16T02:13:49.971Z] > git config --get commit.template [1ms]
+[2022-08-16T02:13:49.992Z] > git check-ignore -v -z --stdin [1ms]
+[2022-08-16T02:13:51.014Z] > git show --textconv :src/pages/Main/index.tsx [18ms]
+[2022-08-16T02:13:51.018Z] > git ls-files --stage -- /home/junho/git/pokedex-solid-graphql/src/pages/Main/index.tsx [4ms]
+[2022-08-16T02:13:51.065Z] > git cat-file -s 27f9c733b5b854a37a839390be7984d31b6462cc [22ms]
