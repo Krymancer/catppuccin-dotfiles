@@ -1,1 +1,0 @@
-[2022-08-16 17:36:38.534] [renderer1] [warning] [lifecycle] onWillShutdown is taking a long time, pending operations: join.workingCopyHistory
