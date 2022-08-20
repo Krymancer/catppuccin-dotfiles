@@ -1,5 +1,5 @@
 # Dotfiles
-My very own arch theme, no distraction clean as you can expected for a arch rice
+My very own arch theme, no distraction and clean as you can expected for a arch rice 🍚
 
 ## Screenshots
 
