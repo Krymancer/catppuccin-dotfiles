@@ -1,0 +1,449 @@
+[2022-08-19 23:58:18.440] [13580] (engine.cpp:239): Time: Fri Aug 19 23:58:18 2022 UTC logLevel:2
+[2022-08-19 23:58:18.442] [13580] (audio_processing_impl.cc:274): Injected APM submodules:
+Echo control factory: 0
+Echo detector: 0
+Capture analyzer: 0
+Capture post processor: 0
+Render pre processor: 0
+[2022-08-19 23:58:18.442] [13580] (audio_processing_impl.cc:531): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 }, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 0, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 0, level: Moderate }, transient_suppression: { enabled: 0 }, voice_detection: { enabled: 0 }, gain_controller1: { enabled: 0, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_level_minimum: 0, analog_level_maximum: 255 }, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, level_estimator: { vad_probability_attack: 1, type: Rms, adjacent_speech_frames_threshold: 1, initial_saturation_margin_db: 20, extra_saturation_margin_db: 2 }, gain_applier: { adjacent_speech_frames_threshold: 1, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50 }}}, residual_echo_detector: { enabled: 1 }, level_estimation: { enabled: 0 }}
+[2022-08-19 23:58:18.442] [13580] (audio_device_impl.cc:83): Create
+[2022-08-19 23:58:18.442] [13580] (audio_device_impl.cc:91): CreateForTest
+[2022-08-19 23:58:18.442] [13580] (audio_device_buffer.cc:64): AudioDeviceBuffer::ctor
+[2022-08-19 23:58:18.442] [13580] (audio_device_impl.cc:129): AudioDeviceModuleImpl
+[2022-08-19 23:58:18.442] [13580] (audio_device_impl.cc:133): CheckPlatform
+[2022-08-19 23:58:18.442] [13580] (audio_device_impl.cc:144): current platform is Linux
+[2022-08-19 23:58:18.442] [13580] (audio_device_impl.cc:163): CreatePlatformSpecificObjects
+[2022-08-19 23:58:18.442] [13580] (audio_device_impl.cc:992): PlatformAudioLayer
+[2022-08-19 23:58:18.442] [13580] (audio_device_impl.cc:299): PulseAudio support is enabled.
+[2022-08-19 23:58:18.442] [13580] (audio_mixer_manager_pulse_linux.cc:57): AudioMixerManagerLinuxPulse created
+[2022-08-19 23:58:18.442] [13580] (audio_device_pulse_linux.cc:81): AudioDeviceLinuxPulse created
+[2022-08-19 23:58:18.442] [13580] (audio_device_impl.cc:304): Linux PulseAudio APIs will be utilized
+[2022-08-19 23:58:18.442] [13580] (audio_device_impl.cc:345): AttachAudioBuffer
+[2022-08-19 23:58:18.442] [13580] (audio_device_buffer.cc:180): SetRecordingSampleRate(0)
+[2022-08-19 23:58:18.442] [13580] (audio_device_buffer.cc:186): SetPlayoutSampleRate(0)
+[2022-08-19 23:58:18.442] [13580] (audio_device_buffer.cc:200): SetRecordingChannels(0)
+[2022-08-19 23:58:18.442] [13580] (audio_device_buffer.cc:206): SetPlayoutChannels(0)
+[2022-08-19 23:58:18.442] [13580] (audio_device_impl.cc:355): ActiveAudioLayer
+[2022-08-19 23:58:18.442] [13580] (audio_processing_impl.cc:274): Injected APM submodules:
+Echo control factory: 0
+Echo detector: 0
+Capture analyzer: 0
+Capture post processor: 0
+Render pre processor: 0
+[2022-08-19 23:58:18.442] [13580] (audio_engine.cpp:482): Creating audio engine: standard
+[2022-08-19 23:58:18.442] [13580] (audio_device_impl.cc:365): Init
+[2022-08-19 23:58:18.448] [13580] (audio_device_pulse_linux.cc:1610): failed to connect context, error=-1
+[2022-08-19 23:58:18.448] [13580] (audio_device_pulse_linux.cc:144): failed to initialize PulseAudio
+[2022-08-19 23:58:18.448] [13580] (audio_device_impl.cc:374): Audio device initialization failed.
+[2022-08-19 23:58:18.448] [13580] (audio_coding.cpp:143): Using software Opus decoder
+[2022-08-19 23:58:18.448] [13580] (audio_coding.cpp:160): Using software Opus encoder
+[2022-08-19 23:58:18.448] [13580] (audio_device_impl.cc:896): RegisterAudioCallback
+[2022-08-19 23:58:18.448] [13580] (audio_device_buffer.cc:81): RegisterAudioCallback
+[2022-08-19 23:58:18.448] [13580] (audio_engine.cpp:197): Setting audio input device: 'default'
+[2022-08-19 23:58:18.448] [13580] (audio_device_impl.cc:579): SetStereoRecording(1)
+[2022-08-19 23:58:18.448] [13580] (audio_device_impl.cc:777): SetRecordingDevice(0)
+[2022-08-19 23:58:18.448] [13580] (audio_device_impl.cc:567): StereoRecordingIsAvailable
+[2022-08-19 23:58:18.448] [13580] (audio_device_impl.cc:579): SetStereoRecording(0)
+[2022-08-19 23:58:18.448] [13580] (audio_device_impl.cc:548): SetMicrophoneVolume(255)
+[2022-08-19 23:58:18.448] [13580] (audio_engine.cpp:209): Setting audio output device: 'default'
+[2022-08-19 23:58:18.448] [13580] (audio_device_impl.cc:709): SetPlayoutDevice(0)
+[2022-08-19 23:58:18.448] [13580] (audio_device_impl.cc:613): StereoPlayoutIsAvailable
+[2022-08-19 23:58:18.448] [13580] (audio_device_impl.cc:625): SetStereoPlayout(0)
+[2022-08-19 23:58:18.448] [13580] (audio_device_impl.cc:912): BuiltInAECIsAvailable
+[2022-08-19 23:58:18.448] [13580] (audio_processing_impl.cc:531): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 }, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 0, level: Moderate }, transient_suppression: { enabled: 0 }, voice_detection: { enabled: 0 }, gain_controller1: { enabled: 0, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_level_minimum: 0, analog_level_maximum: 255 }, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, level_estimator: { vad_probability_attack: 1, type: Rms, adjacent_speech_frames_threshold: 1, initial_saturation_margin_db: 20, extra_saturation_margin_db: 2 }, gain_applier: { adjacent_speech_frames_threshold: 1, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50 }}}, residual_echo_detector: { enabled: 1 }, level_estimation: { enabled: 0 }}
+[2022-08-19 23:58:18.448] [13580] (audio_processing_impl.cc:531): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 }, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 0, level: Moderate }, transient_suppression: { enabled: 0 }, voice_detection: { enabled: 0 }, gain_controller1: { enabled: 1, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_level_minimum: 0, analog_level_maximum: 255 }, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, level_estimator: { vad_probability_attack: 1, type: Rms, adjacent_speech_frames_threshold: 1, initial_saturation_margin_db: 20, extra_saturation_margin_db: 2 }, gain_applier: { adjacent_speech_frames_threshold: 1, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50 }}}, residual_echo_detector: { enabled: 1 }, level_estimation: { enabled: 0 }}
+[2022-08-19 23:58:18.448] [13580] (agc_manager_direct.cc:69): [agc] GetMinMicLevel
+[2022-08-19 23:58:18.448] [13580] (agc_manager_direct.cc:73): [agc] Using default min mic level: 12
+[2022-08-19 23:58:18.449] [13580] (captured_audio_processor.cpp:115): SetNoiseCancellation: 0
+[2022-08-19 23:58:18.449] [13580] (audio_processing_impl.cc:531): AudioProcessing::ApplyConfig: AudioProcessing::Config{ pipeline: { maximum_internal_processing_rate: 48000, multi_channel_render: 0, multi_channel_capture: 0 }, pre_amplifier: { enabled: 0, fixed_gain_factor: 1 }, high_pass_filter: { enabled: 1 }, echo_canceller: { enabled: 1, mobile_mode: 0, enforce_high_pass_filtering: 1 }, noise_suppression: { enabled: 1, level: High }, transient_suppression: { enabled: 0 }, voice_detection: { enabled: 0 }, gain_controller1: { enabled: 1, mode: AdaptiveAnalog, target_level_dbfs: 3, compression_gain_db: 9, enable_limiter: 1, analog_level_minimum: 0, analog_level_maximum: 255 }, gain_controller2: { enabled: 0, fixed_digital: { gain_db: 0 }, adaptive_digital: { enabled: 0, level_estimator: { vad_probability_attack: 1, type: Rms, adjacent_speech_frames_threshold: 1, initial_saturation_margin_db: 20, extra_saturation_margin_db: 2 }, gain_applier: { adjacent_speech_frames_threshold: 1, max_gain_change_db_per_second: 3, max_output_noise_level_dbfs: -50 }}}, residual_echo_detector: { enabled: 1 }, level_estimation: { enabled: 0 }}
+[2022-08-19 23:58:18.449] [13580] (engine.cpp:144): *** OnDevicesChanged:
+[2022-08-19 23:58:18.449] [13580] (engine.cpp:145): * audioInput:
+[2022-08-19 23:58:18.449] [13580] (engine.cpp:150): * audioOutput:
+[2022-08-19 23:58:18.487] [13580] (audio_engine.cpp:197): Setting audio input device: 'default'
+[2022-08-19 23:58:18.487] [13580] (audio_device_impl.cc:827): RecordingIsInitialized
+[2022-08-19 23:58:18.487] [13580] (audio_device_impl.cc:579): SetStereoRecording(1)
+[2022-08-19 23:58:18.487] [13580] (audio_device_impl.cc:777): SetRecordingDevice(0)
+[2022-08-19 23:58:18.487] [13580] (audio_device_impl.cc:567): StereoRecordingIsAvailable
+[2022-08-19 23:58:18.487] [13580] (audio_device_impl.cc:579): SetStereoRecording(0)
+[2022-08-19 23:58:18.487] [13580] (audio_device_impl.cc:548): SetMicrophoneVolume(255)
+[2022-08-19 23:58:18.487] [13580] (audio_engine.cpp:209): Setting audio output device: 'default'
+[2022-08-19 23:58:18.487] [13580] (audio_device_impl.cc:821): PlayoutIsInitialized
+[2022-08-19 23:58:18.487] [13580] (audio_device_impl.cc:709): SetPlayoutDevice(0)
+[2022-08-19 23:58:18.487] [13580] (audio_device_impl.cc:613): StereoPlayoutIsAvailable
+[2022-08-19 23:58:18.487] [13580] (audio_device_impl.cc:625): SetStereoPlayout(0)
+[2022-08-19 23:58:18.487] [13580] (audio_device_impl.cc:548): SetMicrophoneVolume(255)
+[2022-08-19 23:58:18.495] [13561] (discord.cpp:517): JS console: ["%c[default]","[BUILD INFO] Release Channel: stable, Build Number: 142751, Version Hash: d676e32492ac65bedda163b2928db98e61801b21"]
+[2022-08-19 23:58:18.616] [13561] (discord.cpp:517): JS console: ["%c[default]","[NATIVE INFO] host 0.0.19, modules: discord_desktop_core: 2, discord_erlpack: 1, discord_spellcheck: 1, discord_utils: 1, discord_voice: 1"]
+[2022-08-19 23:58:18.712] [13561] (discord.cpp:517): JS console: ["%c[Spellchecker]","sh is not a valid locale."]
+[2022-08-19 23:58:18.716] [13561] (discord.cpp:517): JS console: ["%c[Spellchecker]","Switching to en-US","(available)"]
+[2022-08-19 23:58:19.763] [13561] (discord.cpp:517): JS console: ["Deprecation warning: value provided is not in a recognized RFC2822 or ISO format. moment construction falls back to js Date(), which is not reliable across all browsers and versions. Non RFC2822/ISO date formats are discouraged and will be removed in an upcoming major release. Please refer to http://momentjs.com/guides/#/warnings/js-date/ for more info.\nArguments: \n[0] _isAMomentObject: true, _isUTC: false, _useUTC: false, _l: undefined, _i: 5/13/2022 10:00 -0800, _f: undefined, _strict: undefined, _locale: [object Object]\nError\n    at Function.createFromInputFallback (https://discordapp.com/assets/52b4b5e33fb1ccc9f4ad.js:5763:330)\n    at Vn (https://discordapp.com/assets/52b4b5e33fb1ccc9f4ad.js:5789:696)\n    at Kn (https://discordapp.com/assets/52b4b5e33fb1ccc9f4ad.js:5792:356)\n    at Wn (https://discordapp.com/assets/52b4b5e33fb1ccc9f4ad.js:5792:199)\n    at jn (https://discordapp.com/assets/52b4b5e33fb1ccc9f4ad.js:5791:886)\n    at zn (https://discordapp.com/assets/52b4b5e33fb1ccc9f4ad.js:5792:697)\n    at Xn (https://discordapp.com/assets/52b4b5e33fb1ccc9f4ad.js:5792:731)\n    at i (https://discordapp.com/assets/52b4b5e33fb1ccc9f4ad.js:5759:961)\n    at Object.962314 (https://discordapp.com/assets/25f92117356703873b43.js:1826:332)\n    at l (https://discordapp.com/assets/e9936430ebde0761bea9.js:1:154)\n    at Object.72840 (https://discordapp.com/assets/25f92117356703873b43.js:1665:788)\n    at l (https://discordapp.com/assets/e9936430ebde0761bea9.js:1:154)\n    at Object.900993 (https://discordapp.com/assets/25f92117356703873b43.js:64:163)\n    at l (https://discordapp.com/assets/e9936430ebde0761bea9.js:1:154)\n    at Object.101327 (https://discordapp.com/assets/25f92117356703873b43.js:176:57)\n    at l (https://discordapp.com/assets/e9936430ebde0761bea9.js:1:154)\n    at Object.206566 (https://discordapp.com/assets/25f92117356703873b43.js:182:912)\n    at l (https://discordapp.com/assets/e9936430ebde0761bea9.js:1:154)\n    at Object.998872 (https://discordapp.com/assets/794c5baffc2468094d3f.js:226:237)\n    at Function.l (https://discordapp.com/assets/e9936430ebde0761bea9.js:1:154)"]
+[2022-08-19 23:58:19.983] [13561] (discord.cpp:517): JS console: ["%c[CloudSyncUtils]","CloudSync is not supported on this platform"]
+[2022-08-19 23:58:20.126] [13561] (discord.cpp:517): JS console: ["[DEPRECATED] Please use `subscribeWithSelector` middleware"]
+[2022-08-19 23:58:21.449] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-19 23:58:21.703] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-19 23:58:21.704] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-19 23:58:21.790] [13561] (discord.cpp:517): JS console: ["%c[RPCServer:WSS]","Starting on 6463"]
+[2022-08-19 23:58:21.901] [13561] (discord.cpp:517): JS console: ["%c[RPCServer:IPC]","Starting on /run/user/1000/discord-ipc-0"]
+[2022-08-19 23:58:24.706] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-19 23:58:24.960] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-19 23:58:24.961] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-19 23:58:27.965] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-19 23:58:28.227] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-19 23:58:28.228] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-19 23:58:31.229] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-19 23:58:31.484] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-19 23:58:31.485] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-19 23:58:31.833] [13561] (discord.cpp:517): JS console: ["%c[LoginQRSocket]","[0ms] connecting to wss://remote-auth-gateway.discord.gg/?v=1"]
+[2022-08-19 23:58:31.843] [13561] (discord.cpp:517): JS console: ["%c[Flux]","Slow batch emitChanges took 106ms recentActions:",""]
+[2022-08-19 23:58:31.843] [13561] (discord.cpp:517): JS console: ["%c[Flux]","Slow dispatch on BROWSER_HANDOFF_UNAVAILABLE: 107.5ms"]
+[2022-08-19 23:58:31.843] [13561] (discord.cpp:517): JS console: ["%c[Flux]","Slow dispatch on BROWSER_HANDOFF_END: 120.5ms"]
+[2022-08-19 23:58:32.327] [13561] (discord.cpp:517): JS console: ["%c[LoginQRSocket]","[496ms] got hello, auth timeout=133523ms"]
+[2022-08-19 23:58:32.469] [13561] (discord.cpp:517): JS console: ["%c[LoginQRSocket]","[639ms] connected, handshaking with fingerprint: xGEJ5eVtUUHgVGbDW3kwKccRQ4HZuyzGpEf05qH6BgY"]
+[2022-08-19 23:58:32.639] [13561] (discord.cpp:517): JS console: ["%c[LoginQRSocket]","[809ms] computed nonce proof"]
+[2022-08-19 23:58:32.933] [13561] (discord.cpp:517): JS console: ["%c[LoginQRSocket]","[1102ms] handshake complete awaiting remote auth."]
+[2022-08-19 23:58:34.486] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-19 23:58:34.740] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-19 23:58:34.740] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-19 23:58:37.744] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-19 23:58:38.001] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-19 23:58:38.002] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-19 23:58:41.006] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-19 23:58:41.267] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-19 23:58:41.268] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-19 23:58:44.269] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-19 23:58:44.375] [13561] (discord.cpp:517): JS console: ["%c[LoginQRSocket]","[12543ms] cleaning up"]
+[2022-08-19 23:58:44.524] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-19 23:58:44.525] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-19 23:58:47.525] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-19 23:58:47.780] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-19 23:58:47.781] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-19 23:58:50.782] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-19 23:58:51.040] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-19 23:58:51.041] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-19 23:58:54.042] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-19 23:58:54.297] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-19 23:58:54.297] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-19 23:58:57.299] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-19 23:58:57.557] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-19 23:58:57.558] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-19 23:59:00.559] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-19 23:59:00.813] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-19 23:59:00.814] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-19 23:59:03.544] [13561] (discord.cpp:517): JS console: ["%c[LoginQRSocket]","[0ms] connecting to wss://remote-auth-gateway.discord.gg/?v=1"]
+[2022-08-19 23:59:03.816] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-19 23:59:03.862] [13561] (discord.cpp:517): JS console: ["%c[LoginQRSocket]","[320ms] got hello, auth timeout=131490ms"]
+[2022-08-19 23:59:04.031] [13561] (discord.cpp:517): JS console: ["%c[LoginQRSocket]","[489ms] connected, handshaking with fingerprint: ZPxfV1bFydmbZPl4tDgHnAIjp6sX0ktZziDJQBjwcs0"]
+[2022-08-19 23:59:04.073] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-19 23:59:04.074] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-19 23:59:04.234] [13561] (discord.cpp:517): JS console: ["%c[LoginQRSocket]","[691ms] computed nonce proof"]
+[2022-08-19 23:59:04.404] [13561] (discord.cpp:517): JS console: ["%c[LoginQRSocket]","[861ms] handshake complete awaiting remote auth."]
+[2022-08-19 23:59:07.075] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-19 23:59:07.333] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-19 23:59:07.334] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-19 23:59:10.336] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-19 23:59:10.593] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-19 23:59:10.594] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-19 23:59:13.598] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-19 23:59:13.854] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-19 23:59:13.855] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-19 23:59:16.859] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-19 23:59:17.113] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-19 23:59:17.114] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-19 23:59:20.116] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-19 23:59:20.370] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-19 23:59:20.371] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-19 23:59:22.637] [13561] (discord.cpp:517): JS console: ["%c[LoginQRSocket]","[19093ms] cleaning up"]
+[2022-08-19 23:59:23.373] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-19 23:59:23.627] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-19 23:59:23.628] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-19 23:59:24.903] [13561] (discord.cpp:517): JS console: ["%c[LoginQRSocket]","[0ms] connecting to wss://remote-auth-gateway.discord.gg/?v=1"]
+[2022-08-19 23:59:25.271] [13561] (discord.cpp:517): JS console: ["%c[LoginQRSocket]","[369ms] got hello, auth timeout=136272ms"]
+[2022-08-19 23:59:25.485] [13561] (discord.cpp:517): JS console: ["%c[LoginQRSocket]","[584ms] connected, handshaking with fingerprint: LLt-Ec9nnD1qxNScQKKSLjzjoMkHNbkrBdqcoGLn6Ww"]
+[2022-08-19 23:59:25.660] [13561] (discord.cpp:517): JS console: ["%c[LoginQRSocket]","[758ms] computed nonce proof"]
+[2022-08-19 23:59:25.880] [13561] (discord.cpp:517): JS console: ["%c[LoginQRSocket]","[979ms] handshake complete awaiting remote auth."]
+[2022-08-19 23:59:26.629] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-19 23:59:26.884] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-19 23:59:26.885] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-19 23:59:29.886] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-19 23:59:30.140] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-19 23:59:30.141] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-19 23:59:33.142] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-19 23:59:33.398] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-19 23:59:33.399] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-19 23:59:36.403] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-19 23:59:36.657] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-19 23:59:36.659] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-19 23:59:39.659] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-19 23:59:39.914] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-19 23:59:39.915] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-19 23:59:42.918] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-19 23:59:43.173] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-19 23:59:43.173] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-19 23:59:46.176] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-19 23:59:46.431] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-19 23:59:46.432] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-19 23:59:49.432] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-19 23:59:49.687] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-19 23:59:49.688] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-19 23:59:52.689] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-19 23:59:52.879] [13561] (discord.cpp:517): JS console: ["%c[LoginQRSocket]","[27975ms] cleaning up"]
+[2022-08-19 23:59:52.949] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-19 23:59:52.950] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-19 23:59:54.972] [13561] (discord.cpp:517): JS console: ["%c[LoginQRSocket]","[0ms] connecting to wss://remote-auth-gateway.discord.gg/?v=1"]
+[2022-08-19 23:59:55.368] [13561] (discord.cpp:517): JS console: ["%c[LoginQRSocket]","[401ms] got hello, auth timeout=118583ms"]
+[2022-08-19 23:59:55.584] [13561] (discord.cpp:517): JS console: ["%c[LoginQRSocket]","[617ms] connected, handshaking with fingerprint: 20sHX6Y388EXcxPUSrLWnvZj6WBAjmHqcKsyfPfASXM"]
+[2022-08-19 23:59:55.815] [13561] (discord.cpp:517): JS console: ["%c[LoginQRSocket]","[846ms] computed nonce proof"]
+[2022-08-19 23:59:55.953] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-19 23:59:56.011] [13561] (discord.cpp:517): JS console: ["%c[LoginQRSocket]","[1043ms] handshake complete awaiting remote auth."]
+[2022-08-19 23:59:56.207] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-19 23:59:56.208] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-19 23:59:59.209] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-19 23:59:59.466] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-19 23:59:59.466] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-20 00:00:02.469] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:00:02.470] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:00:02.471] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-20 00:00:05.474] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:00:05.738] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:00:05.739] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-20 00:00:08.742] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:00:08.997] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:00:08.998] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-20 00:00:11.999] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:00:12.253] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:00:12.253] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-20 00:00:15.256] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:00:15.257] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:00:15.257] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-20 00:00:18.259] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:00:18.521] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:00:18.522] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-20 00:00:21.524] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:00:21.780] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:00:21.781] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-20 00:00:24.782] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:00:25.037] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:00:25.037] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-20 00:00:28.039] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:00:28.297] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:00:28.297] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-20 00:00:31.299] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:00:31.554] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:00:31.555] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-20 00:00:34.556] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:00:34.813] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:00:34.815] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-20 00:00:37.816] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:00:38.073] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:00:38.074] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-20 00:00:41.076] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:00:41.330] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:00:41.330] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-20 00:00:44.332] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:00:44.587] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:00:44.588] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-20 00:00:47.591] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:00:47.847] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:00:47.848] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-20 00:00:50.849] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:00:51.104] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:00:51.105] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-20 00:00:54.106] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:00:54.366] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:00:54.367] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-20 00:00:57.369] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:00:57.626] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:00:57.627] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-20 00:01:00.629] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:01:00.887] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:01:00.887] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-20 00:01:03.564] [13561] (discord.cpp:517): JS console: ["[hCaptcha] There was an error in your callback."]
+[2022-08-20 00:01:03.565] [13561] (discord.cpp:517): JS console: ["[object Object]"]
+[2022-08-20 00:01:03.889] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:01:04.144] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:01:04.145] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-20 00:01:07.145] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:01:07.404] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:01:07.405] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-20 00:01:10.405] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:01:10.663] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:01:10.663] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-20 00:01:13.665] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:01:13.919] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:01:13.920] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-20 00:01:16.922] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:01:17.177] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:01:17.178] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-20 00:01:20.179] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:01:20.440] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:01:20.441] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-20 00:01:23.442] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:01:23.697] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:01:23.698] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-20 00:01:24.918] [13561] (discord.cpp:517): JS console: ["[hCaptcha] There was an error in your callback."]
+[2022-08-20 00:01:24.918] [13561] (discord.cpp:517): JS console: ["[object Object]"]
+[2022-08-20 00:01:26.700] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:01:26.953] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:01:26.953] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-20 00:01:29.956] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:01:30.217] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:01:30.218] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-20 00:01:33.219] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:01:33.474] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:01:33.475] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-20 00:01:36.476] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:01:36.734] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:01:36.735] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-20 00:01:39.738] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:01:39.997] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:01:39.997] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-20 00:01:42.999] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:01:43.257] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:01:43.258] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-20 00:01:46.259] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:01:46.517] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:01:46.518] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-20 00:01:49.519] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:01:49.520] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:01:49.521] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-20 00:01:52.524] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:01:52.783] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:01:52.784] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-20 00:01:53.953] [13561] (discord.cpp:517): JS console: ["%c[LoginQRSocket]","[118982ms] disconnected, code: 4003 Handshake Timeout"]
+[2022-08-20 00:01:53.954] [13561] (discord.cpp:517): JS console: ["%c[LoginQRSocket]","Could not complete QR code login, trying to restart with a new QR code."]
+[2022-08-20 00:01:54.993] [13561] (discord.cpp:517): JS console: ["[hCaptcha] There was an error in your callback."]
+[2022-08-20 00:01:54.994] [13561] (discord.cpp:517): JS console: ["[object Object]"]
+[2022-08-20 00:01:55.786] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:01:56.047] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:01:56.047] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-20 00:01:56.518] [13561] (discord.cpp:517): JS console: ["%c[LoginQRSocket]","[121550ms] cleaning up"]
+[2022-08-20 00:01:56.519] [13561] (discord.cpp:517): JS console: ["%c[LoginQRSocket]","[0ms] connecting to wss://remote-auth-gateway.discord.gg/?v=1"]
+[2022-08-20 00:01:56.836] [13561] (discord.cpp:517): JS console: ["%c[LoginQRSocket]","[317ms] got hello, auth timeout=115901ms"]
+[2022-08-20 00:01:56.967] [13561] (discord.cpp:517): JS console: ["%c[LoginQRSocket]","[449ms] connected, handshaking with fingerprint: x_ic6Jc4gpahDn0-Q8W7zNVJyn0MsUGlkJuUN0SxhVc"]
+[2022-08-20 00:01:57.205] [13561] (discord.cpp:517): JS console: ["%c[LoginQRSocket]","[687ms] computed nonce proof"]
+[2022-08-20 00:01:57.372] [13561] (discord.cpp:517): JS console: ["%c[LoginQRSocket]","[854ms] handshake complete awaiting remote auth."]
+[2022-08-20 00:01:59.052] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:01:59.310] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:01:59.311] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-20 00:02:02.312] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:02:02.577] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:02:02.579] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-20 00:02:05.582] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:02:05.840] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:02:05.842] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-20 00:02:08.842] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:02:08.843] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:02:08.843] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-20 00:02:11.845] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:02:12.107] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:02:12.108] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-20 00:02:15.109] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:02:15.364] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:02:15.365] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-20 00:02:18.151] [13561] (discord.cpp:517): JS console: ["%c[LoginQRSocket]","[21629ms] cleaning up"]
+[2022-08-20 00:02:18.365] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:02:18.620] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:02:18.621] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-20 00:02:21.623] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:02:21.877] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:02:21.878] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-20 00:02:24.880] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:02:25.134] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:02:25.134] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-20 00:02:28.139] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:02:28.393] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:02:28.394] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-20 00:02:28.957] [13561] (discord.cpp:517): JS console: ["%c[LoginQRSocket]","[0ms] connecting to wss://remote-auth-gateway.discord.gg/?v=1"]
+[2022-08-20 00:02:29.281] [13561] (discord.cpp:517): JS console: ["%c[LoginQRSocket]","[327ms] got hello, auth timeout=119707ms"]
+[2022-08-20 00:02:29.351] [13561] (discord.cpp:517): JS console: ["%c[LoginQRSocket]","[397ms] connected, handshaking with fingerprint: L6a1pHD0-4GwLo_ljoOEhkLoyhPoNsHep_bhshuRtMY"]
+[2022-08-20 00:02:29.531] [13561] (discord.cpp:517): JS console: ["%c[LoginQRSocket]","[576ms] computed nonce proof"]
+[2022-08-20 00:02:29.939] [13561] (discord.cpp:517): JS console: ["%c[LoginQRSocket]","[984ms] handshake complete awaiting remote auth."]
+[2022-08-20 00:02:31.396] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:02:31.650] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:02:31.651] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-20 00:02:34.653] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:02:34.906] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:02:34.907] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-20 00:02:37.909] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:02:38.166] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:02:38.167] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-20 00:02:41.169] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:02:41.433] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:02:41.433] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-20 00:02:44.435] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:02:44.690] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:02:44.691] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-20 00:02:47.692] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:02:47.946] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:02:47.947] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-20 00:02:50.949] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:02:50.950] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:02:50.950] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-20 00:02:53.952] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:02:54.207] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:02:54.208] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-20 00:02:54.785] [13561] (discord.cpp:517): JS console: ["%c[AuthenticationStore]","setAuthToken called.","[object Object]"]
+[2022-08-20 00:02:54.809] [13561] (discord.cpp:517): JS console: ["%c[Routing/Utils]","transitionTo - Transitioning to /app"]
+[2022-08-20 00:02:54.848] [13561] (discord.cpp:517): JS console: ["%c[LoginQRSocket]","[25894ms] cleaning up"]
+[2022-08-20 00:02:54.895] [13561] (discord.cpp:517): JS console: ["%c[GatewaySocket]","[CONNECT] wss://gateway.discord.gg, encoding: etf, version: 9, compression: zlib-stream"]
+[2022-08-20 00:02:55.200] [13561] (discord.cpp:517): JS console: ["%c[GatewaySocket]","[CONNECTED] wss://gateway.discord.gg/?encoding=etf&v=9&compress=zlib-stream in 305 ms"]
+[2022-08-20 00:02:55.201] [13561] (discord.cpp:517): JS console: ["%c[ConnectionStore]","handleIdentify called","[object Object]"]
+[2022-08-20 00:02:55.201] [13561] (discord.cpp:517): JS console: ["%c[GatewaySocket]","[IDENTIFY]"]
+[2022-08-20 00:02:55.215] [13561] (discord.cpp:517): JS console: ["%c[GatewaySocket]","[HELLO] via \ngateway-prd-main-gtnj: 0, heartbeat interval: 41250, took 320 ms"]
+[2022-08-20 00:02:55.767] [13561] (discord.cpp:517): JS console: ["%c[GatewaySocket]","[READY] took 872ms, as 10cdd24a58654a797c031e564ee01b88 via \ngateway-prd-main-gtnj: 254.175\n|  id_created: 0.65\n|  session_lookup_time: 0.576\n|  session_lookup_finished: 0.02\n|  discord-sessions-blue-prd-2-53: 251.55\n|  |  start_session: 100.478\n|  |  |  discord-api-7688dc9565-z4cxb: 92.747\n|  |  |  |  get_user: 15.638\n|  |  |  |  get_guilds: 25.951\n|  |  |  |  user_settings_proto: 0.124\n|  |  |  |  relationships: 8.633\n|  |  |  |  friend_suggestion: 0.065\n|  |  |  |  connections: 0.021\n|  |  |  |  serialized_read_states: 0.01\n|  |  |  |  pending_payments: 0.002\n|  |  |  |  send_scheduled_deletion_message: 0.002\n|  |  |  |  sanitize_premium_perks: 0.002\n|  |  |  |  guild_join_requests: 0.001\n|  |  |  |  user_guild_settings: 0.002\n|  |  |  |  serialized_private_channels: 8.388\n|  |  |  |  experiments: 7.513\n|  |  |  |  affine_user_ids: 16.622\n|  |  |  |  required_action: 0.008\n|  |  |  |  authorized_ip_coro: 0.002\n|  |  starting_guild_connect: 0.042\n|  |  presence_started: 41.851\n|  |  guilds_started: 7.879\n|  |  guilds_connect: 101.021\n|  |  presence_connect: 0.001\n|  |  connect_finished: 101.072\n|  |  build_ready: 0.086\n|  |  optimize_ready: 0.123\n|  |  split_ready: 0.017\n|  |  clean_ready: 0"]
+[2022-08-20 00:02:55.795] [13561] (discord.cpp:517): JS console: ["%c[AuthenticationStore]","handleConnectionOpen called","[object Object]"]
+[2022-08-20 00:02:55.886] [13561] (discord.cpp:517): JS console: ["%c[NativeDispatchUtils]","Tried getting Dispatch instance before instantiated"]
+[2022-08-20 00:02:55.957] [13561] (discord.cpp:517): JS console: ["%c[Flux]","Slow dispatch on CONNECTION_OPEN: 171ms"]
+[2022-08-20 00:02:56.002] [13561] (discord.cpp:517): JS console: ["%c[GatewaySocket]","[READY_SUPPLEMENTAL] took 1107ms"]
+[2022-08-20 00:02:56.508] [13561] (discord.cpp:517): JS console: ["%c[Flux]","Slow batch emitChanges took 369ms recentActions:",""]
+[2022-08-20 00:02:56.509] [13561] (discord.cpp:517): JS console: ["%c[Flux]","Slow dispatch on I18N_LOAD_SUCCESS: 370.69999999995343ms"]
+[2022-08-20 00:02:57.209] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:02:57.210] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:02:57.211] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-20 00:03:00.213] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:03:00.467] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:03:00.468] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-20 00:03:03.472] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:03:03.727] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:03:03.727] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-20 00:03:06.729] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:03:06.986] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:03:06.987] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-20 00:03:09.989] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:03:10.247] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:03:10.248] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-20 00:03:11.057] [14419] (region_latency_tester.cpp:71): Sending 5 latency test pings to region brazil
+[2022-08-20 00:03:11.057] [14419] (region_latency_tester.cpp:71): Sending 5 latency test pings to region buenos-aires
+[2022-08-20 00:03:11.057] [14419] (region_latency_tester.cpp:71): Sending 5 latency test pings to region santiago
+[2022-08-20 00:03:11.057] [14419] (region_latency_tester.cpp:71): Sending 5 latency test pings to region newark
+[2022-08-20 00:03:11.057] [14419] (region_latency_tester.cpp:71): Sending 5 latency test pings to region us-east
+[2022-08-20 00:03:11.193] [14419] (region_latency_tester.cpp:270): Average RTT for region brazil is 63.25
+[2022-08-20 00:03:11.193] [14419] (region_latency_tester.cpp:270): Average RTT for region buenos-aires is 79.5
+[2022-08-20 00:03:11.193] [14419] (region_latency_tester.cpp:270): Average RTT for region santiago is 100.5
+[2022-08-20 00:03:11.193] [14419] (region_latency_tester.cpp:270): Average RTT for region newark is 86
+[2022-08-20 00:03:11.193] [14419] (region_latency_tester.cpp:270): Average RTT for region us-east is 88
+[2022-08-20 00:03:11.198] [13561] (discord.cpp:517): JS console: ["%c[RTCLatencyTestManager]","RTC region latency test completed: ","brazil,buenos-aires,newark,us-east,santiago"]
+[2022-08-20 00:03:13.251] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:03:13.507] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:03:13.508] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-20 00:03:16.509] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:03:16.770] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:03:16.770] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-20 00:03:19.772] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:03:20.027] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:03:20.027] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-20 00:03:23.029] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:03:23.287] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:03:23.288] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-20 00:03:26.289] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:03:26.543] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:03:26.544] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-20 00:03:29.546] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:03:29.801] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:03:29.801] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-20 00:03:32.802] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:03:33.057] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:03:33.058] [13581] (device_info_linux.cc:78): GetDeviceName
+[2022-08-20 00:03:36.062] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:03:36.317] [13581] (device_info_linux.cc:45): NumberOfDevices
+[2022-08-20 00:03:36.318] [13581] (device_info_linux.cc:78): GetDeviceName

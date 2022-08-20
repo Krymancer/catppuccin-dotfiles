@@ -1,0 +1,17 @@
+* {
+	background: #1e1e2e;
+	border: #11111b;
+	selected: #cba6f7;
+	foreground: #cdd6f4;
+	foreground2: #bac2de;
+	cyan: #74c7ec;
+	green: #a6e3a1;
+	orange: #fab387;
+	pink: #f5c2e7;
+	purple: #b4befe;
+	red: #f38ba8;
+	yellow: #f9e2af;
+	grey: #585b70;
+	blue: #89b4fa;
+	width: 600;
+}

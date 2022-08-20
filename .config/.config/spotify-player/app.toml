@@ -1,0 +1,18 @@
+
+theme = "Catppuccin-mocha"
+client_id = "0fa9a21885e140e5b17aa840fc33da07"
+app_refresh_duration_in_ms = 32
+playback_refresh_duration_in_ms = 0
+cover_image_refresh_duration_in_ms = 2000
+track_table_item_max_len = 32
+enable_media_control = false
+default_device = "spotify-player"
+play_icon = ""
+pause_icon = "▶"
+
+[device]
+name = "spotify-player"
+device_type = "speaker"
+volume = 50
+bitrate = 160
+audio_cache = false

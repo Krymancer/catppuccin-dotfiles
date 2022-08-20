@@ -1,0 +1,5 @@
+2022/08/19-23:58:02.315 34bb Creating DB /home/junho/.config/discord/Local Storage/leveldb since it was missing.
+2022/08/19-23:58:02.329 34bb Reusing MANIFEST /home/junho/.config/discord/Local Storage/leveldb/MANIFEST-000001
+2022/08/20-00:00:17.016 34af Level-0 table #5: started
+2022/08/20-00:00:17.038 34af Level-0 table #5: 505490 bytes OK
+2022/08/20-00:00:17.046 34af Delete type=0 #3
